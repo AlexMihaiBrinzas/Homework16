@@ -8,7 +8,7 @@ public class Recursivitate {
         System.out.println(sumofFirst(4));
         System.out.println(sumofEven(4));
         System.out.println("The reversed string is: "+reverse);
-
+        System.out.println(fibonacci(2));
 
 
     }
@@ -42,7 +42,15 @@ public class Recursivitate {
         return reverseString(str.substring(1)) + str.charAt(0);
 
     }
+    public static int fibonacci(int n){
+        if (n == 1) {
+            return 0;
+        }else if (n == 2){
+            return 1;
+        }
+        return fibonacci(n - 2) + fibonacci(n - 1);
 
+    }
 
 
 }
